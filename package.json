@@ -1,0 +1,29 @@
+{
+  "name": "bar",
+  "version": "0.0.0",
+  "description": "Pretty, dependency free bar charts",
+  "main": "js/bar.js",
+  "scripts": {
+    "test": "node_modules/nodeunit/bin/nodeunit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eighttrackmind/bar.git"
+  },
+  "keywords": [
+    "bar",
+    "chart",
+    "graph",
+    "histogram",
+    "error",
+    "visualize",
+    "visualization",
+    "d3"
+  ],
+  "author": "Boris Cherny <boris@performancejs.com> (http://performancejs.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eighttrackmind/bar/issues"
+  },
+  "homepage": "https://github.com/eighttrackmind/bar"
+}
