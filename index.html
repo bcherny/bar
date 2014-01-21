@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<title> bar | demo </title>
+
+	<style>
+
+		* { border: 0; margin: 0; padding: 0; }
+
+		#el {
+			background: #eee;
+			position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				top: 0;
+		}
+
+	</style>
+
+	<link rel="stylesheet" href="css/bar.css" />
+
+</head>
+<body>
+
+	<div id="el"></div>
+
+	<script src="dist/bar-compiled.js"></script>
+	<script>
+
+		var element = document.querySelector('#el'),
+			data = [
+				{ id: 0, mean: 10, stddev: 1 },
+				{ id: 1, mean: 12, stddev: .6 },
+				{ id: 2, mean: 9, stddev: 1.2 },
+				{ id: 3, mean: 14, stddev: 1.1 },
+				{ id: 4, mean: 10, stddev: 1.1 },
+				{ id: 5, mean: 11, stddev: .3 }
+			],
+			bar = new Bar(element, data, {
+				propertyMap: {
+					text: 'id'
+				}
+			});
+
+	</script>
+</body>
+</html>
